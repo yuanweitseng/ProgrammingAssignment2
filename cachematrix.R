@@ -1,7 +1,7 @@
 ## these pair of functions create a matrix and capture the inverse of the matrix
 
 ## makeCacheMatrix: This function creates a special "matrix" object that can cache 
-## its inverse. the function does the followings:
+## its inverse. the function does the followings:inverse()
 ## set the matrix
 ## get the matrix
 ## set the inverse of the matrix
@@ -14,7 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
     inv <<- NULL
   }
   get <- function() x
-  setinv <- function(solve) inv <<- solve
+  setinv <- function(inverse) inv <<- inverse
   getinv <- function() inv
   list(set = set, get = get,
        setinv = setinv,
